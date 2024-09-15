@@ -11,23 +11,9 @@ void tower_of_hanoi(int num, string asal, string tujuan, string bantu) {
 	tower_of_hanoi(num - 1, bantu, tujuan, asal);
 }
 int main() {
-  	int num;
-  	
-  	while (true){
-	  	cout << "Masukkan angka: "; cin >> num;
-		if (cin.fail()) {
-	      cin.clear(); 
-	      cin.ignore(numeric_limits<streamsize>::max(), '\n'); 
-	      cout << "Masukkan angka positif." << endl;
-	    }
-	    else if (num < 1) {
-	      cout << "Masukkan angka positif." << endl;
-	    }
-	    else {
-	      break;
-	    }
-  }
-  cout<<"Langkah-langkah:\n" << endl;
-  tower_of_hanoi(num, "I", "III", "II");
+	int num = 3 ;
+  	cout<<"Langkah-langkah:\n" << endl;
+ 	tower_of_hanoi(num, "A", "C", "B");
+  	return 0;
   return 0;
 }
