@@ -176,14 +176,6 @@ void sortDescending() {
     cout << "Keranjang berhasil diurutkan secara descending berdasarkan harga.\n";
 }
 
-
-Node* lastNode(Node* node) {
-    while (node && node->next)
-        node = node->next;
-    return node;
-}
-
-
 void beliBarang(){
     int pilihan;
     while (true) {
